@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en" class="text-center">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AK Law Firm | Texas Personal Injury Lawyer</title>
+    <meta name="description" content="Texas Personal Injury Lawyer">
+    <meta name="theme-color" content="#0d296b">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://akfirm.com/wp-content/themes/ak-law-rebuild/assets/favicon/favicon-96x96.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="AK Law Firm | Texas Personal Injury Lawyer">
+    <meta property="og:description" content="Texas Personal Injury Lawyer">
+    <meta property="og:image" content="AK-1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" as="image" href="AK-1.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+    /* Ensure visually-hidden works even if Bootstrap CSS fails to load */
+    .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    :root {
+        --brand:#0d296b;
+        --brand-600:#0b235b;
+        --ink:#0f172a;
+        --surface:#f7f9fc;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+        margin-top: 0;
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background-color: #0e0e0e;
+        color: var(--ink);
+    }
+
+    .hero-title, h1, h2, h3 {
+        font-family: "Playfair Display", serif;
+        letter-spacing: .2px;
+    }
+    .hero-title { font-size: clamp(2.6rem, 6vw, 4rem); }
+    h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); }
+
+    a.inline-link { text-decoration: underline; text-underline-offset: 3px; }
+
+    #mainHeader {
+        position: fixed; top: 0; right: 0; left: 0; z-index: 2000;
+        background: rgba(13,41,107,0);
+        transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease, border-color .3s ease;
+        border-bottom: 1px solid transparent;
+    }
+    #mainHeader.scrolled {
+        background: rgba(13,41,107,.65);
+        box-shadow: 0 6px 18px rgba(0,0,0,.25);
+        backdrop-filter: saturate(140%) blur(10px);
+        border-bottom: 1px solid rgba(255,255,255,.18);
+    }
+
+    .hero-section { padding-top: 100px; position: relative; color: #fff; overflow: hidden; min-height: 400px; }
+    .hero-section::before {
+        content:""; position:absolute; inset:0;
+        background: radial-gradient(1200px 600px at 60% 20%, rgba(255,255,255,.07), transparent 60%),
+                   linear-gradient(to bottom, rgba(0,0,0,.32), rgba(0,0,0,.52));
+        pointer-events:none;
+    }
+    .hero-title { font-weight: 700; margin-bottom: .5rem; text-shadow: 0 2px 18px rgba(0,0,0,.28); }
+
+    .accent { position: relative; display: inline-block; padding-bottom: .25rem; }
+    .accent::after {
+        content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -12px;
+        width: 72px; height: 2px; border-radius: 999px;
+        background: linear-gradient(90deg, rgba(255,255,255,.0) 0%, #ffffff 50%, rgba(255,255,255,.0) 100%);
+        opacity: .95;
+    }
+    .accent-dark::after {
+        background: linear-gradient(90deg, rgba(13,41,107,0) 0%, var(--brand) 50%, rgba(13,41,107,0) 100%);
+    }
+
+    .section-wrap { padding: 2rem; position:relative; }
+    .section-inner { max-width: 70ch; margin: 0 auto; text-align: left; }
+    .prose p {
+        font-size: 1.05rem; line-height: 1.9; letter-spacing: .01em; margin-bottom: 1.15rem;
+        color: #0f0f10; text-align: justify;
+    }
+    .section-wrap:not(:first-child)::before {
+        content:""; position:absolute; top:-1.5rem; left:0; right:0; height:1px;
+        background: linear-gradient(90deg, transparent, rgba(13,41,107,.12), transparent);
+    }
+
+    .figure { border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 22px rgba(0,0,0,.15); }
+    .figure img { display: block; width: 100%; height: auto; transition: transform .28s ease; }
+    .figure:hover img { transform: scale(1.015); }
+
+    .btn-ghost {
+        display: inline-flex; align-items: center; gap: .6rem;
+        padding: .68rem 1.15rem; border: 1px solid rgba(255,255,255,.85); color: #fff;
+        background: rgba(255,255,255,.085); border-radius: 999px;
+        backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 10px 28px rgba(0,0,0,.25); text-decoration: none; font-weight: 600; letter-spacing: .02em;
+        transition: transform .15s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.15); border-color: #ffffff; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(0,0,0,.32); }
+    .btn-ghost i { transition: transform .18s ease; }
+    .btn-ghost:hover i { transform: translateX(4px); }
+    .btn-ghost:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
+    .btn-ghost:active { transform: translateY(0); }
+
+    #mainHeader a { color:#fff; text-decoration:none; }
+
+    .header-icon {
+        display:inline-flex; align-items:center; justify-content:center;
+        width:40px; height:40px; border-radius:999px; margin-left:.5rem;
+        color:#fff; text-decoration:none; outline-offset:2px;
+    }
+    .header-icon i { font-size:1.5rem; line-height:1; }
+    .header-icon:focus-visible { outline:2px solid #fff; }
+    @media (hover:hover){ .header-icon:hover{ background: rgba(255,255,255,.12); } }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    .footer-link { text-decoration: none; }
+    .footer-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    footer { position: relative; background: #0c0c0c; }
+    footer::before {
+        content:""; position:absolute; top:0; left:0; right:0; height:2px;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent); opacity:.6;
+    }
+
+    a:focus-visible, button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+    #services { scroll-margin-top: 110px; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .reveal, .figure img, .btn-ghost, .accent::after { transition: none; animation: none; }
+        html { scroll-behavior: auto; }
+    }
+
+    #backToTop { position: fixed; right: 16px; bottom: 16px; z-index: 1040; display: none; }
+    </style>
+</head>
+<body class="bg-dark text-dark">
+
+    <header id="mainHeader" class="text-white py-3 d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-start mb-0">
+                <a href="#" class="text-white text-decoration-none" aria-label="Texas Personal Injury Lawyer home">Texas Personal Injury Lawyer</a>
+            </h1>
+            <div><a href="https://www.facebook.com/ourinjurylawyers/" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a><a href="https://www.instagram.com/ourinjurylawyers/" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i><span class="visually-hidden">Instagram</span></a></div>
+        </div>
+    </header>
+
+    <section class="hero-section"
+             style="background-image: url('AK-1.jpg'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+      <div class="container hero-content"
+           style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; color: white;">
+        <div class="d-flex flex-column align-items-center text-center">
+          <h2 class="hero-title accent mb-3">AK Law Firm</h2>
+          <a href="#services" class="btn-ghost" role="button" aria-label="Read more about services">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main style="background-color: #ffffff;">
+        <div class="container py-5" style="margin-top:0;">
+            <div id="services" class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">Texas Crash Claim Representation</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>After a sudden roadway incident, many people face competing demands such as medical appointments, vehicle repairs, missed work, and calls from insurers. In that environment, guidance from <a href="https://akfirm.com/" class="inline-link">Texas Personal Injury Lawyer</a> can help bring structure to the early stages by focusing on accurate records, clear communication, and careful review of available information. A professional perspective from Texas Personal Injury Lawyer may also help individuals understand how decisions made soon after an event can influence the way a claim is evaluated.</p>
+                            <p>A well-prepared claim often depends on details that are easy to overlook, including treatment timelines, witness information, repair estimates, and the long-term effect of an injury on daily activities. Support from Texas Personal Injury Lawyer can be useful when organizing these materials and presenting them in a way that reflects the full impact of the situation. As questions arise about responsibility, coverage, or settlement discussions, input from Texas Personal Injury Lawyer may help reduce uncertainty and encourage more informed choices.</p>
+                            <p>Moving forward after a serious accident is rarely simple, especially when physical recovery and financial pressure happen at the same time. Working with Texas Personal Injury Lawyer can provide a steady point of contact for reviewing options, responding to claim developments, and keeping attention on practical next steps. With a measured approach, individuals are better positioned to protect their interests while focusing on health, stability, and a return to normal routines.</p>
+                            <figure class="figure mt-4">
+                                <img src="AK-2..png" loading="lazy" decoding="async" alt="Texas Personal Injury Lawyer image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color: var(--brand);">
+                            <span class="accent accent-dark">Austin Accident Injury Counsel</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>A serious injury can create immediate uncertainty, especially when health concerns, income disruption, and important documentation all need attention at the same time. In these moments, Texas Personal Injury Lawyer can represent the kind of focused legal support that helps people understand practical next steps without rushing decisions. By preserving records, noting key dates, and communicating carefully with involved parties, individuals can build a clearer foundation for any claim, while Texas Personal Injury Lawyer may also signal the value of reviewing circumstances with attention to detail.</p>
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-6">
+                                    <p>The process of seeking compensation often depends on facts that must be gathered, organized, and presented in a reliable way. Medical records, witness information, incident reports, photographs, and expense documentation can all contribute to a more complete picture of what happened and how the injury has affected daily life. With Texas Personal Injury Lawyer placed in the context of careful case preparation, injured people may better understand how responsibility, damages, and insurance issues are commonly evaluated. Just as importantly, Texas Personal Injury Lawyer can reflect the need for steady guidance when questions arise about deadlines, settlement discussions, or the long-term impact of an injury.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ratio ratio-16x9 mx-auto" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);">
+                                        <video class="w-100 h-100" controls playsinline preload="metadata" title="Texas Personal Injury Lawyer video" style="width:100%; height:100%; background:#000;"><source src="https://akfirm.com/wp-content/uploads/2025/10/h264_aac_hd_hfr.mp4" type="video/mp4"></video>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Every claim is different, so a thoughtful approach should account for both immediate needs and future consequences. Recovery may involve ongoing treatment, changes in work capacity, transportation challenges, or added strain on family responsibilities. Professional assistance can help align legal strategy with documented losses and realistic goals, while encouraging informed choices at each stage. For those seeking clarity after an injury, Texas Personal Injury Lawyer can serve as a reminder that knowledgeable guidance may help protect interests, reduce avoidable mistakes, and support a more confident path forward.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">San Antonio Injury Advocates</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>Unexpected harm can affect routines, responsibilities, and long-term plans in ways that are not always obvious at first. Speaking with Texas Personal Injury Lawyer can help individuals consider how to protect their interests while they focus on recovery and practical needs. With careful attention to timelines, available information, and communication with involved parties, Texas Personal Injury Lawyer may provide valuable direction during a difficult period.</p>
+                            <p>Every claim depends on the specific facts, including how the event occurred, what injuries were reported, and what financial consequences followed. Support from Texas Personal Injury Lawyer can make it easier to understand the role of documentation, professional evaluations, and insurer responses. As questions arise, Texas Personal Injury Lawyer may help people approach decisions with greater confidence and avoid unnecessary missteps.</p>
+                            <p>The right guidance can also help set realistic expectations about the process, from initial review through possible resolution. By working with Texas Personal Injury Lawyer, injured individuals may gain a clearer view of their options, the importance of consistency, and the value of timely action. A steady, informed approach can reduce stress and help ensure that important details are not overlooked.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 reveal">
+                  <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                  <span class="accent accent-dark">
+                  <i class="bi bi-geo-alt" style="margin-right:.5rem;"></i>AK Law Firm</span>
+                  </h2>
+
+                    <div class="mb-4 ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.1821925115014!2d-95.4566837!3d29.772372899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c1ac3c390829%3A0x2b3c1c6659c3c647!2sAK%20Law%20Firm%20Accident%20%26%20Injury%20Lawyers!5e0!3m2!1sen!2sin!4v1791280751257!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                    <p class="fw-bold" style="color: #000000;">AK Law Firm</p>
+                    <p style="color: #000000;">333 W Loop N Fwy Suite 300, Houston, TX 77024, United States</p>
+                    <p style="color: #000000;">(833) 957-3067</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white bg-dark mt-5">
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">AK Law Firm</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="Texas-Personal-Injury-Lawyer.html" rel="noopener">Company Website</a></li>    <li><a class="link-light footer-link" href="https://akfirm.com/" rel="noopener">https://akfirm.com/</a></li>    <li><a class="link-light footer-link" href="" rel="noopener"></a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Useful Links</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="" rel="noopener">Texas Crash Claim Representation</a></li>    <li><a class="link-light footer-link" href="https://akfirm.com/" rel="noopener">Austin Accident Injury Counsel</a></li>    <li><a class="link-light footer-link" href="https://maps.app.goo.gl/NCH8xCJapwYvgeaK9" rel="noopener">San Antonio Injury Advocates</a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Follow us on Social Media</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="https://www.facebook.com/ourinjurylawyers/" rel="noopener">Facebook</a></li>    <li><a class="link-light footer-link" href="https://www.instagram.com/ourinjurylawyers/" rel="noopener">Instagram</a></li>    <li><a class="link-light footer-link" href="" rel="noopener"></a></li>  </ul></div>
+            </div>
+            <div class="mt-4">
+                
+<section class="safe-news-wall" aria-label="Houston, Texas, United states">
+  <style>
+    .safe-news-wall { background:#f4f4f6; color:#333; padding:18px 12px 24px; border-radius:2px; }
+    .safe-news-wall h2 { margin:0 0 16px; color:#111; text-align:center; font-family:Arial, sans-serif; font-size:28px; line-height:1.2; font-weight:400; }
+    .safe-news-grid { column-count:4; column-gap:14px; }
+    .safe-news-card { display:inline-block; width:100%; break-inside:avoid; margin:0 0 14px; padding:18px; background:#fff; border:1px solid #ddd; border-radius:4px; color:#333; text-align:left; text-decoration:none; box-sizing:border-box; }
+    .safe-news-card:hover { color:#333; text-decoration:none; box-shadow:0 4px 16px rgba(66,66,66,.16); }
+    .safe-news-card h3 { margin:0 0 14px; color:#333; font-family:Arial, sans-serif; font-size:24px; line-height:1.25; font-weight:700; letter-spacing:0; }
+    .safe-news-card img { display:block; width:100%; height:auto; margin:0 0 14px; object-fit:cover; }
+    .safe-news-card p { margin:0 0 16px; color:#444; font-family:Arial, sans-serif; font-size:18px; line-height:1.55; }
+    .safe-news-meta { color:#8396a8; font-family:Arial, sans-serif; font-size:15px; line-height:1.4; }
+    @media (max-width: 1100px) { .safe-news-grid { column-count:3; } }
+    @media (max-width: 800px) { .safe-news-grid { column-count:2; } }
+    @media (max-width: 560px) { .safe-news-grid { column-count:1; } .safe-news-wall h2 { font-size:24px; } .safe-news-card h3 { font-size:21px; } }
+  </style>
+  <h2>Houston, Texas, United states</h2>
+  <div class="safe-news-grid">
+    <a class="safe-news-card" href="https://www.fox26houston.com/news/truong-quoc-duong-houston-federal-prison-spring-medical-center-arson" target="_blank" rel="noopener noreferrer"><h3>Houston man sentenced to federal prison for $3.5M Spring medical center arson</h3><img src="https://images.foxtv.com/static.fox26houston.com/www.fox26houston.com/content/uploads/2022/11/1280/720/wooden-gavel.jpg?ve=1&amp;tl=1" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A 55-year-old man has been sentenced federal prison after planning an arson that destroyed a Spring medical facility and injured a firefighter, costing nearly $3.6 million.</p><div class="safe-news-meta">fox26houston.com - 11h</div></a><a class="safe-news-card" href="https://www.indexbox.io/blog/oil-prices-rise-as-us-iran-diplomacy-stalls-middle-east-supply-risks-persist/" target="_blank" rel="noopener noreferrer"><h3>Oil Prices Rise as U.S.-Iran Diplomacy Stalls, Middle East Supply Risks Persist</h3><img src="https://www.indexbox.io/landing/img/blog/telegram-fallback/08a9e49b5f3119ca78a17a8f5a5a0d5b.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Oil prices climbed as stalled U.S.-Iran talks kept Middle East supply risks alive, with Brent at $106.90 and WTI at $93.80, even as regional crude exports rose to 12.8 million bpd in September.</p><div class="safe-news-meta">indexbox.io - 18h</div></a><a class="safe-news-card" href="https://www.houstonpublicmedia.org/articles/news/texas/2026/09/28/563004/the-u-s-and-mexico-arent-breaking-up-over-cartels-theyre-arguing-over-whos-to-blame/" target="_blank" rel="noopener noreferrer"><h3>The U.S. and Mexico aren’t breaking up over cartels. They’re arguing over who’s to blame.</h3><img src="https://cdn.houstonpublicmedia.org/wp-content/uploads/2026/09/28141353/2026-09-21t000000z-1268355601-mt1zuma000zyln95-rtrmadp-3-zuma-1500x1000.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>At the United Nations this week, President Trump described Mexico as an &quot;epicenter&quot; of cartel violence and reasserted that its government must reclaim territory controlled by criminal groups.</p><div class="safe-news-meta">houstonpublicmedia.org - 1d</div></a><a class="safe-news-card" href="https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/09/28/562922/texas-senate-race-spending-talarico-paxton-super-pacs/" target="_blank" rel="noopener noreferrer"><h3>Paxton-Talarico contest on course to demolish Texas record for campaign spending in a U.S. Senate election</h3><img src="https://cdn.houstonpublicmedia.org/wp-content/uploads/2026/09/22082855/20260727-james-talarico-ken-paxton-kera-1500x1001.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Collective spending on advertising by Democratic state Rep. James Talarico, Republican Attorney General Ken Paxton, and super PACs supporting each of them has already topped $153 million. AdImpact projects it will reach more than double that by Election Day.</p><div class="safe-news-meta">houstonpublicmedia.org - 1d</div></a><a class="safe-news-card" href="https://www.indexbox.io/blog/oil-prices-fall-for-sixth-straight-session-as-us-iran-talks-and-saudi-pipeline-restart-ease-supply-fears/" target="_blank" rel="noopener noreferrer"><h3>Oil Prices Fall for Sixth Straight Session as U.S.-Iran Talks and Saudi Pipeline Restart Ease Supply Fears</h3><img src="https://www.indexbox.io/landing/img/blog/telegram-fallback/0cb624c96eb94dcb24f7a04dac9f9b81.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Oil prices slid for a sixth straight day as U.S.-Iran talks renewed hopes of reopening the Strait of Hormuz and Saudi Arabia&#x27;s East-West pipeline resumed partial operations after drone attacks.</p><div class="safe-news-meta">indexbox.io - 4d</div></a><a class="safe-news-card" href="https://www.si.com/college/houston/football/houston-cougars-unique-connections-to-georgia-southern-heading-into-week-4" target="_blank" rel="noopener noreferrer"><h3>Houston Cougars&#x27; Unique Connections to Georgia Southern Heading Into Week 4</h3><img src="https://images2.minutemediacdn.com/image/upload/c_crop,x_152,y_0,w_2260,h_1271/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/houston_cougars_on_si/01m3b6e04q6qj9pdgxmd.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The Cougars will be facing a familiar name from the program&#x27;s past.</p><div class="safe-news-meta">si.com - 4d</div></a><a class="safe-news-card" href="https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/09/22/562540/u-s-senate-texas-railroad-commission-races-remain-tight-less-than-month-before-early-voting-tsu-poll-finds/" target="_blank" rel="noopener noreferrer"><h3>U.S. Senate, Texas Railroad Commission races remain tight less than month before early voting, TSU poll finds</h3><img src="https://cdn.houstonpublicmedia.org/wp-content/uploads/2020/10/26180729/AP20274574193752-1-1200x800.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A second poll, from Texas 2036, shows a large fraction of voters remain undecided, while many intend to split their tickets.</p><div class="safe-news-meta">houstonpublicmedia.org - 7d</div></a><a class="safe-news-card" href="http://courier-journal.xpr-gannett.com/press-release/story/230570/boss-heavy-haul-launches-dedicated-rail-transload-service-near-houston-texas/" target="_blank" rel="noopener noreferrer"><h3>BOSS Heavy Haul Launches Dedicated Rail Transload Service Near Houston, Texas</h3><img src="https://pix.xpr.media/p/eyJzIjoiNzk4Nzk2M2YtNzJiNS00YWI1LTgzMTItZjA5YjEyNDkzN2JjIiwiYyI6ImNkODZhNjI4LTkwOTgtNDU1NC04MjNmLWRhY2YzZDAxOTZlMyIsInYiOjF9.NZVHUm8ebLZbH8hTwU_t3dP_DUH7uTOwEFwHvQ6MG_8.gif" alt="" loading="lazy" referrerpolicy="no-referrer"><p>New rail-to-yard connection near Houston streamlines permitting and offers clients greater efficiency in moving heavy,</p><div class="safe-news-meta">courier-journal.xpr-gannett.com - 7d</div></a><a class="safe-news-card" href="http://beaconjournal.xpr-gannett.com/press-release/story/237651/boss-heavy-haul-launches-dedicated-rail-transload-service-near-houston-texas/" target="_blank" rel="noopener noreferrer"><h3>BOSS Heavy Haul Launches Dedicated Rail Transload Service Near Houston, Texas</h3><img src="https://pix.xpr.media/p/eyJzIjoiNzk4Nzk2M2YtNzJiNS00YWI1LTgzMTItZjA5YjEyNDkzN2JjIiwiYyI6ImM5Njg2ODE2LTk5MDAtNGY2OS04Y2YwLWMxMmVhMWVkN2E1OSIsInYiOjF9.CLTbDcdmYltk2grdIGcRp4ux0GJmE17USfGnqEjptlc.gif" alt="" loading="lazy" referrerpolicy="no-referrer"><p>New rail-to-yard connection near Houston streamlines permitting and offers clients greater efficiency in moving heavy,</p><div class="safe-news-meta">beaconjournal.xpr-gannett.com - 7d</div></a><a class="safe-news-card" href="http://elpasotimes.xpr-gannett.com/press-release/story/203215/boss-heavy-haul-launches-dedicated-rail-transload-service-near-houston-texas/" target="_blank" rel="noopener noreferrer"><h3>BOSS Heavy Haul Launches Dedicated Rail Transload Service Near Houston, Texas</h3><img src="https://pix.xpr.media/p/eyJzIjoiNzk4Nzk2M2YtNzJiNS00YWI1LTgzMTItZjA5YjEyNDkzN2JjIiwiYyI6ImNjNjc4NWZmLWE4YjctNGFjNi04ZTllLTRjNTk3OGRiYTliMSIsInYiOjF9.HYZVmD1l8jaJXFdgXTXvOFr6cXo9aB2kdyTNPausE3s.gif" alt="" loading="lazy" referrerpolicy="no-referrer"><p>New rail-to-yard connection near Houston streamlines permitting and offers clients greater efficiency in moving heavy,</p><div class="safe-news-meta">elpasotimes.xpr-gannett.com - 7d</div></a><a class="safe-news-card" href="http://desmoinesregister.xpr-gannett.com/press-release/story/127957/boss-heavy-haul-launches-dedicated-rail-transload-service-near-houston-texas/" target="_blank" rel="noopener noreferrer"><h3>BOSS Heavy Haul Launches Dedicated Rail Transload Service Near Houston, Texas</h3><img src="https://pix.xpr.media/p/eyJzIjoiNzk4Nzk2M2YtNzJiNS00YWI1LTgzMTItZjA5YjEyNDkzN2JjIiwiYyI6IjFjODFlN2M1LWNhNzgtNDI0ZS04YmYyLTI2MGI5MDY0MzAzOSIsInYiOjF9.7PvqfA7VZauv-D5N96JWdDk4_EAPuHoz2E0t7ef6c6E.gif" alt="" loading="lazy" referrerpolicy="no-referrer"><p>New rail-to-yard connection near Houston streamlines permitting and offers clients greater efficiency in moving heavy,</p><div class="safe-news-meta">desmoinesregister.xpr-gannett.com - 7d</div></a><a class="safe-news-card" href="https://www.indexbox.io/blog/oil-prices-rise-15-as-us-iran-talks-eyed-at-un-general-assembly/" target="_blank" rel="noopener noreferrer"><h3>Oil Prices Rise 1.5% as US-Iran Talks Eyed at UN General Assembly</h3><img src="https://www.indexbox.io/landing/img/blog/telegram-fallback/38b2f63abc199a3cc59eb1f5d0f0a198.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Oil prices rebounded 1.5% on Tuesday, with Brent at $101.82 and WTI at $97.22, as markets weighed possible US-Iran talks at the UN General Assembly and increased Saudi crude flows through the Strait of Hormuz.</p><div class="safe-news-meta">indexbox.io - 7d</div></a><a class="safe-news-card" href="https://www.houstonchronicle.com/news/houston-texas/education/article/us-news-world-report-2027-rankings-texas-22436980.php" target="_blank" rel="noopener noreferrer"><h3>Rice remains Texas&#x27; top university in 2026 U.S. News rankings</h3><img src="https://s.hdnux.com/photos/01/67/06/12/31220379/3/rawImage.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Rice University, University of Texas at Austin and Texas A&amp;M University were again the top schools in Texas.</p><div class="safe-news-meta">houstonchronicle.com - 7d</div></a><a class="safe-news-card" href="https://usaherald.com/texas-shuts-down-houston-area-birth-tourism-center-that-served-foreign-chinese-nationals/" target="_blank" rel="noopener noreferrer"><h3>Texas Shuts Down Houston-Area ‘Birth Tourism’ Center That Served Foreign Chinese Nationals</h3><img src="https://usaherald.com/wp-content/uploads/2026/09/paxton.png" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Key Takeaways Texas Attorney General Ken Paxton announced that De’Ai Postpartum Care Center will cease operations following a state lawsuit accusing it of facilitating unlawful “birth tourism.” The lawsuit alleged the Houston-area operation coached primarily Chinese clients on obtaining tourist visas while concealing that their principal purpose for entering the United States was to give Texas shuts down a Houston-area postpartum center accused of helping Chinese nationals evade visa rules in an alleged birth-tourism operation.</p><div class="safe-news-meta">usaherald.com - 10d</div></a><a class="safe-news-card" href="https://www.houstonchronicle.com/news/houston-texas/article/houston-postpartum-center-birth-tourism-paxton-22438592.php" target="_blank" rel="noopener noreferrer"><h3>Houston postpartum center closes after Paxton &#x27;birth tourism&#x27; lawsuit</h3><img src="https://s.hdnux.com/photos/01/67/00/34/31196984/3/rawImage.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A Houston-area postpartum care center closed after Attorney General Ken Paxton sued it over alleged birth tourism and immigration fraud.</p><div class="safe-news-meta">houstonchronicle.com - 11d</div></a><a class="safe-news-card" href="https://houston.innovationmap.com/abbott-us-space-academy-texas-2677868492.html" target="_blank" rel="noopener noreferrer"><h3>Gov. Abbott assembles team to lure U.S. Space Academy to Texas</h3><img src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy81MzY0ODM5Ny9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTgwNTY4ODg5MH0.n9FUOCFCme8J7RzECxMJ_kNJ3_DNLK3gXp8MdLpdqy0/img.jpg?width=1200&amp;height=600&amp;coordinates=0%2C40%2C0%2C40" alt="" loading="lazy" referrerpolicy="no-referrer"><p>State Rep. Greg Bonnen of Friendswood has been tapped to lead a new team that will promote Texas as the future home of the U.S. Space Academy.</p><div class="safe-news-meta">houston.innovationmap.com - 12d</div></a><a class="safe-news-card" href="https://en.antaranews.com/news/431648/indonesia-outlines-energy-roadmap-at-g20-meeting-in-texas" target="_blank" rel="noopener noreferrer"><h3>Indonesia outlines energy roadmap at G20 meeting in Texas</h3><img src="https://cdn.antaranews.com/cache/1200x800/2026/09/16/1000439125.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Deputy Minister of Energy and Mineral Resources (ESDM) Yuliot outlined Indonesia’s strategic roadmap to address global energy volatility while ...</p><div class="safe-news-meta">en.antaranews.com - 13d</div></a><a class="safe-news-card" href="https://kuwaittimes.com/article/49891/business/us-touts-its-power-avoids-iran-war-at-g20-energy-meeting/" target="_blank" rel="noopener noreferrer"><h3>US touts its power, avoids Iran war at G20 energy meeting</h3><img src="https://kuwaittimes.com/kuwaittimes/uploads/images/2026/09/16/444215.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>HOUSTON: The United States hammered home a message touting its energy dominance at Tuesday’s meeting of G20 energy ministers in Houston, while brushing past t...</p><div class="safe-news-meta">kuwaittimes.com - 13d</div></a><a class="safe-news-card" href="https://www.reuters.com/business/energy/us-energy-producer-unveil-venezuela-investment-energy-secretary-says-2026-09-16/" target="_blank" rel="noopener noreferrer"><h3>US firm Heeney Capital to operate Venezuela gold mine, Continental seeks to enter oil project</h3><img src="https://www.reuters.com/resizer/v2/PG243VKCSZLCDPYVYDPGCXERTI.jpg?auth=3746050d286236271db8becb2b143f77c3956a33ab2a188140c147283994f4ed&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Venezuelan authorities ​signed deals on Wednesday granting New York-headquartered investment firm Heeney Capital operational and export rights for a gold mine, ‌and setting preliminary terms for US producer Continental Resources to seek business opportunities in a large oil area.</p><div class="safe-news-meta">reuters.com - 13d</div></a><a class="safe-news-card" href="https://www.thestandard.com.hk/world/article/342910/US-touts-its-power-avoids-Iran-war-at-G20-Energy-meeting" target="_blank" rel="noopener noreferrer"><h3>US touts its power, avoids Iran war at G20 Energy meeting</h3><img src="https://image.hkstandard.com.hk/f/1200p0/0x0/100/none/b35cadb42cb1a01f008bbcc478922b1f/2026-09/n_8.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The United States hammered home a message touting its energy dominance at Tuesday&#x27;s meeting of G20 energy ministers in Houston, while brushing past the consequences of Washington&#x27;s war in Iran and environmental concerns.</p><div class="safe-news-meta">thestandard.com.hk - 14d</div></a><a class="safe-news-card" href="https://kuwaittimes.com/article/49819/business/at-g20-summit-us-unravels-power-plant-climate-rules/" target="_blank" rel="noopener noreferrer"><h3>At G20 summit, US unravels power plant climate rules</h3><img src="https://kuwaittimes.com/kuwaittimes/uploads/images/2026/09/15/443724.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>HOUSTON: President Donald Trump’s administration on Monday scrapped limits on carbon emissions from coal and gas-fired power plants, the latest in a string of...</p><div class="safe-news-meta">kuwaittimes.com - 14d</div></a><a class="safe-news-card" href="https://www.france24.com/en/americas/20260915-venezuela-to-join-g20-energy-meetings-in-texas-at-us-invitation" target="_blank" rel="noopener noreferrer"><h3>Venezuela to join G20 energy meetings in Texas at US&#x27;s invitation</h3><img src="https://s.france24.com/media/display/47d96d1c-b098-11f1-9021-005056a97e36/w:1280/p:16x9/ea7607de8aa30c2ff2134ead7b6e53246246fe8f.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A Venezuelan delegation will join G20 energy talks in Houston this week as soaring oil prices and disruption from the Middle East war put global energy supplies under pressure. The meeting comes as the…</p><div class="safe-news-meta">france24.com - 15d</div></a><a class="safe-news-card" href="https://www.bizjournals.com/houston/news/2026/09/15/greg-bonnen-texas-us-space-academy-proposal-trump.html" target="_blank" rel="noopener noreferrer"><h3>Just a moment...</h3><div class="safe-news-meta">bizjournals.com - 15d</div></a><a class="safe-news-card" href="https://www.reuters.com/legal/transactional/us-treasury-blocks-citgo-parent-companies-governance-changes-2026-09-14/" target="_blank" rel="noopener noreferrer"><h3>US Treasury blocks Citgo, parent companies from governance changes</h3><img src="https://www.reuters.com/resizer/v2/AA25IT4NZBPWNA6R6LAQYN54QM.jpg?auth=c6be0e93879dc81d2cb8999231dee84b26322b3780e676af3a5e8ca496a099b4&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The U.S. Treasury Department on Monday amended a Venezuela license ​to prevent any unauthorized changes that ‌could alter governance at Venezuela-owned refiner Citgo Petroleum and its parent companies in the ​United States, PDV Holding and ​Citgo Holding.</p><div class="safe-news-meta">reuters.com - 15d</div></a>
+  </div>
+</section>
+
+            </div>
+        </div>
+    </footer>
+
+    <a id="backToTop" href="#top" class="btn btn-light rounded-pill shadow-sm px-3 py-2" aria-label="Back to top">↑ Top</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var header = document.getElementById("mainHeader");
+        var backToTop = document.getElementById("backToTop");
+        var reveals = document.querySelectorAll('.reveal');
+
+        window.addEventListener("scroll", function() {
+            var scrolled = window.scrollY > 50;
+            header.classList.toggle("scrolled", scrolled);
+            backToTop.style.display = window.scrollY > 600 ? "inline-flex" : "none";
+        });
+
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(el => io.observe(el));
+        } else {
+            reveals.forEach(el => el.classList.add('visible'));
+        }
+    });
+    </script>
+
+</body>
+</html>
